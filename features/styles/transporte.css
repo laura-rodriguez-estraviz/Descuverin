@@ -1,0 +1,100 @@
+section {
+    width: 98%;
+    border-bottom: 2px solid #9a9a7e; /* Línea horizontal */
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+section.taxis {
+    display: inline-block;
+}
+
+/* Articles */
+article {
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid #9a9a7e; /* Línea vertical */
+    overflow: hidden;
+}
+
+/* Estilo por defecto para todas las listas */
+ul {
+    list-style-type: disc; /* Usa círculos como viñetas */
+    padding-left: 0; /* Elimina el espacio a la izquierda */
+    list-style-position: inside; /* Mueve el punto dentro del contenido */
+    color:#9a9a7e;
+    font-family: helvetica-world-regular;
+}
+
+/* Estilo especial para la lista de rutas de interes */
+ul.separado {
+    list-style-type: disc;
+    padding-left: 25%; /* Agrega espacio a la izquierda */
+    list-style-position: outside; /* Mantiene los puntos fuera */
+    text-align: left;
+    color:#9a9a7e;
+    font-family: "Contrail One";
+    margin: auto;
+}
+
+/* Tamaño imagenes */
+section figure img{
+    width: 200px;
+}
+
+/* Tamaño del tren */
+figure.tren img{
+    width: 98%;
+}
+
+/* Los articles de tren no tienen lineas ni padding */
+#tren {
+    border: none;
+    padding: 0px;
+}
+
+/* Eliminamos el padding del container de bootstrap*/
+.container {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none; /* Quita el sbrayado de los enlaces */
+    color:#9a9a7e;
+    font-family: "Contrail One"
+}
+
+
+/* Eliminar borde derecho en el último article */
+article:last-child {
+    border-right: none;
+}
+
+/* El último section no tendrá bordes */
+section:last-child {
+    border-bottom: none;
+}
+
+/* media para pantallas pequeñas, donde ya no caben bien horizontalmente los article */
+@media (max-width: 767.2px) {
+    
+    article {
+        width: 100%;
+        border-right: none; /* Se eliminan las líneas verticales */
+        border-bottom: 2px solid #9a9a7e; /* Línea entre cada article */
+        padding-bottom: 10px;
+    }
+
+    article:last-child {
+        border-bottom: none;
+    }
+
+    ul.separado {
+        list-style-type: disc;
+        padding-left: 30%; /* Agrega espacio a la izquierda */
+        list-style-position: outside; /* Mantiene los puntos fuera */
+        text-align: left;
+    }
+}

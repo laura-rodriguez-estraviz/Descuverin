@@ -1,0 +1,201 @@
+/*Colocación de los elementos del formulario (No se utiliza en mapa)*/
+/*Formato para la section donde se encuentra el formulario de búsqueda*/
+#buscar form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+legend {
+    font-size: 20px;
+}
+
+/*Formato de cada uno de los fieldsets (en cada uno hay está uno de los select)*/
+#campo1 {
+    margin: 0 auto;
+    grid-column: 2;
+}
+
+#campo2 {
+    margin: 0 auto;
+    grid-column: 3;
+}
+
+
+/*Formateo de los Botones*/
+input[type="submit"] {
+    background-color: #9a9a7e;
+    /*Color de fondo*/
+    color: #2e2a20;
+    /* Color del texto */
+    border: 3px solid #2e2a20;
+    line-height: 1;
+    font-family: helvetica-world-regular;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    /* tiempos para las trasiciones al pasar sobre el botón */
+    align-self: end;
+    grid-column: 4; /*Colocación en la grid del botón (No se usa en mapa)*/
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 180px;
+    height: 29px;
+    padding: 0px 0px 4px 0px;
+}
+
+/* Efecto al pasar sobre el botón */
+input[type="submit"]:hover {
+    background-color: #6e6f50;
+    /* Cambio de color de fondo */
+    border-color: #2e2a20;
+    /* Cambio de color del borde */
+    color: #2e2a20;
+    /* Cambio de color del texto */
+}
+
+/* Efecto al pulsar sobre el botón */
+input[type="submit"]:active {
+    background-color: #9a9a7e;
+    border-color: #2e2a20;
+}
+
+
+/*Estilo de los fieldsets*/
+fieldset {
+    border: none;
+    margin: 0;
+}
+
+
+/*Estilo de los selects*/
+/*clase que incluye todo el select*/
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 190px;
+    font-family: helvetica-world-regular;
+}
+
+/*Caja del select no desplegado*/
+.custom-select {
+    appearance: none;
+    /* Elimina el estilo por defecto del elemento select */
+    background-color: #9a9a7e;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 30px 2px 3.5px;
+    font-size: 20px;
+    color: #2e2a20;
+    cursor: pointer;
+    height: 26px;
+    line-height: 26px;
+    width: 168px;
+    text-align: center;
+}
+
+/* Cuadrado marrón para la flecha del select */
+.custom-select-wrapper::before {
+    content: "";
+    /* Crea un pseudo-elemento*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 28px;
+    background-color: #2e2a20;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    pointer-events: none;
+    /* Ignora eventos de puntero sobre este elemento */
+}
+
+/* flecha (se genera mediante un un cuadrado que se gira y pintan dos de sus bordes, de manera que queda un triangulo sin cerrar)*/
+.custom-select-wrapper::after {
+    content: "";
+    /* Crea un pseudo-elemento*/
+    position: absolute;
+    right: 8.5px;
+    top: 5.5px;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #9a9a7e;
+    border-bottom: 2px solid #9a9a7e;
+    border-radius: 1px;
+    background-color: transparent;
+    pointer-events: none;
+    /* Ignora eventos de puntero sobre este elemento */
+}
+
+/* "Tabla" que aparece cuando el menu está desplegado */
+.custom-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    /* Ancho del menú del select quitandole los 30px a la derecha del cuadrado marrón y bordes de otros elementos*/
+    background-color: #9a9a7e;
+    border: 2px solid #2e2a20;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 100;
+    /* Asegura que el menú se muestre sobre todos los elementos */
+}
+
+/*Elementos dentro de la "tabla" del select(elementos a seleccionar)*/
+.custom-options div {
+    font-size: 20px;
+    color: #2e2a20;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid #2e2a20;
+    white-space: nowrap;
+    height: 25px;
+    line-height: 23px;/
+}
+
+/*Primera fila de la "tabla" (primera opción)*/
+.custom-options div:first-child {
+    border-top: none;
+}
+
+/*Efecto al pasar el ratón sobre cada opción del select*/
+.custom-options div:hover {
+    background-color: #6e6f50;
+    color: #2e2a20;
+}
+
+
+/*Reponsividad*/
+@media(max-width: 900px) {
+    #buscar form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #buscar input[type="submit"] {
+        grid-column: 2/4;
+    }
+}
+
+@media (max-width: 600px) {
+    #buscar form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #buscar input[type="submit"] {
+        grid-column: 2;
+    }
+
+    #campo1 {
+        grid-column: 2;
+    }
+
+    #campo2 {
+        grid-column: 2;
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "marcadores": [
+      {
+        "nombre": "Maior 5 Apartamentos",
+        "lat": 41.94145345188253,
+        "lng": -7.438403644177913,
+        "descripcion": "Apartamentos en el centro de Barcelona.",
+        "enlace": "https://www.booking.com/hotel/es/maior-5-apartamentos.es.html?aid=318615&label=New_Spanish_ES_ES_21463012105-LPwjRe8TaU%2Ats8W_n17MsAS640874830969%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-407054&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739618121&srpvid=8c9d4f214d2b04b7&type=total&ucfs=1&"
+      },
+      {
+        "nombre": "Villa de Verín",
+        "lat": 41.94001440877931,
+        "lng": -7.436443087994657,
+        "descripcion": "Hotel ubicado en Verín, una localidad en la provincia de Ourense.",
+        "enlace": "https://www.booking.com/hotel/es/villa-de-verin.html?aid=318615&label=English_Spain_EN_ES_21457892785-VZ8dn%2AS70zwTSRhWldM2KAS634117824123%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55593792113%3Atidsa-355815321727%3Alp1005518%3Ali%3Adec%3Adm%3Aag21457892785%3Acmp339899785&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-407054&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739616059&srpvid=91354b1a4c6c06b0&type=total&ucfs=1&"
+      },
+      {
+        "nombre": "Lugano Verín",
+        "lat": 41.94207107987416,
+        "lng": -7.436400387994556,
+        "descripcion": "Hotel en Verín, Galicia, conocido por su hospitalidad.",
+        "enlace": "https://www.booking.com/hotel/es/lugano-verin.en-gb.html?aid=311984&label=lugano-verin-g0zQxru%2AD0zXCPhFsGqqXwS625094148202%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2394000771976%3Akwd-1011813641887%3Alp1005518%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pAE6BwGOTZ3E&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-407054&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739619348&srpvid=04195187bb38042d&type=total&ucfs=1&"
+      },
+      {
+        "nombre": "A Morada do Cigarrón",
+        "lat": 41.942847404918375,
+        "lng": -7.438253815342332,
+        "descripcion": "Alojamiento típico en el corazón de Verín.",
+        "enlace": "https://www.booking.com/hotel/es/a-morada-do-cigarron.es.html?aid=311090&label=a-morada-do-cigarron-xqFhDTMGAtQCOtSwaBWOBAS583897729568%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2394000771976%3Akwd-307628802861%3Alp1005518%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pawEozW2KQ80&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-407054&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739619673&srpvid=7b4f522a9a7801b0&type=total&ucfs=1&"
+      },
+      {
+        "nombre": "Casa Abella",
+        "lat": 41.933653450633514,
+        "lng": -7.553554564361591,
+        "descripcion": "Casa rural en la zona de Verín, Galicia.",
+        "enlace": "https://www.booking.com/hotel/es/casa-abella.es.html"
+      },
+      {
+        "nombre": "Gastronómico Gandainas",
+        "lat": 41.956530771156686,
+        "lng": -7.3375763,
+        "descripcion": "Alojamiento gastronómico cerca de Verín.",
+        "enlace": "https://www.booking.com/hotel/es/gastronomico-gandainas.es.html?aid=318615&label=New_Spanish_ES_ES_21463012105-LPwjRe8TaU%2Ats8W_n17MsAS640874830969%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-399298&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739621016&srpvid=35c954c9640003d0&type=total&ucfs=1&"
+      },
+      {
+        "nombre": "O Retiro do Conde",
+        "lat": 41.93068730782159,
+        "lng": -7.48771607116442,
+        "descripcion": "Hotel rural en Verín, ideal para descansar y disfrutar del entorno.",
+        "enlace": "https://www.booking.com/hotel/es/o-retiro-do-conde.es.html?aid=311090&label=o-retiro-do-conde-zH4PxXjj7jXR4dS9Au3pZwS347915973767%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2394000771976%3Akwd-69841781792%3Alp1005518%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pawEozW2KQ80&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-408663&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739621292&srpvid=faf35553dac000ae&type=total&ucfs=1&"
+      },
+      {
+        "nombre": "Pensión Blanco Conde Laza",
+        "lat": 42.06018418878983,
+        "lng": -7.457368061002049,
+        "descripcion": "Pensión en Laza, a pocos kilómetros de Verín.",
+        "enlace": "https://www.booking.com/hotel/es/pension-blanco-conde-laza.en-gb.html?aid=311984&label=pension-blanco-conde-laza-iVnSRXC9EL7XdzE0fWt4tAS626006026938%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2394000771976%3Akwd-340805081673%3Alp1005518%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXwxhKG0pUU-mcMVT-JwQpc&sid=b895cfcdfb2a3267e652c93a87c7255d&dest_id=-388920&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1739621812&srpvid=a6f15658b81b02df&type=total&ucfs=1&"
+      }
+    ]
+  }
+  

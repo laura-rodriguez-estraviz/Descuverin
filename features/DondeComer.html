@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Título de la página -->
+    <title>DescuVerin</title>
+
+    <!-- Descripción de la página (para SEO) -->
+    <meta name="description" content="Esta página está dedicada al fomento del turismo en Verín, proporcionando información de interés al viajero como alojamiento, restaurantes, actividades etc.">
+
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Verín, transporte, actividades, qué hacer, qué ver, restaurantes">
+
+    <!-- Autores de la página -->
+    <meta name="author" content="Laura Rodríguez Estraviz y Alex Romay Arcos">
+
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Enlaces a hojas de estilo externas -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/dondeComer.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/buscar.css">
+
+    <!-- Importación de fuente de Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+    </style>
+
+    <!-- Importación de jQuery -->
+    <script src="styles/otros/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- Cabecera de la página -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <figure>
+                <!-- Logo de la página con enlace al inicio -->
+                <a href="Index.html">
+                    <img src="../images/Logo.png" id="menu-toggle">
+                </a>
+            </figure>
+
+            <!-- Icono de menú hamburguesa -->
+            <p id="hamburguesa">
+                ☰
+            </p>
+
+            <!-- Menú de navegación -->
+            <ul id="menu" name="MENU">
+                <li><a href="Alojamientos.html">Alojamientos</a></li>
+                <li><a href="Transporte.html">Transporte</a></li>
+                <li><a href="DondeComer.html" class="resaltado">Dónde Comer</a></li>
+                <li><a href="QueHacer.html">Qué hacer</a></li>
+            </ul>
+        </nav>
+
+        <!-- Script para la funcionalidad del menú (navTelef.js) -->
+        <script src="scripts/navTelef.js"></script>
+    </header>
+
+    <!-- Cuerpo principal de la página -->
+    <main>
+        <!-- Sección para el formulario de búsqueda -->
+        <section id="buscar">
+            <form action="Mapa.html" method="GET">
+                <!-- Filtro para seleccionar la zona -->
+                <fieldset id="campo1">
+                    <legend>Zona:</legend>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="select-box">Todos</div>
+                        <div class="custom-options" id="options-box">
+                            <!-- Opciones de zonas disponibles -->
+                            <div data-value="Todos">Todos</div>
+                            <div data-value="Monterrei">Monterrei</div>
+                            <div data-value="Laza">Laza</div>
+                            <div data-value="Verín">Verín</div>
+                            <div data-value="Castrelo do Val">Castrelo do Val</div>
+                            <div data-value="Cualedro">Cualedro</div>
+                            <div data-value="Oímbra">Oímbra</div>
+                            <div data-value="Vilardevós">Vilardevós</div>
+                            <div data-value="Riós">Riós</div>
+                            <div data-value="A Gudiña">A Gudiña</div>
+                            <div data-value="A Mezquita">A Mezquita</div>
+                        </div>
+                    </div>
+                    <!-- Campo oculto para enviar la selección -->
+                    <input type="hidden" name="Zona" id="hidden-zona" value="Todos">
+                </fieldset>
+
+                <!-- Filtro para seleccionar el tipo de comida -->
+                <fieldset id="campo2">
+                    <legend>Tipo:</legend>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="tipo-select-box">Todos</div>
+                        <div class="custom-options" id="tipo-options-box">
+                            <!-- Opciones de tipos de comida disponibles -->
+                            <div data-value="Todos">Todos</div>
+                            <div data-value="Comida española">Comida española</div>
+                            <div data-value="Comida italiana">Comida italiana</div>
+                            <div data-value="Comida portuguesa">Comida portuguesa</div>
+                            <div data-value="Económico">Económico</div>
+                            <div data-value="5 estrellas">5 estrellas</div>
+                            <div data-value="Comida china">Comida china</div>
+                            <div data-value="Vegano">Vegano</div>
+                        </div>
+                    </div>
+                    <!-- Campo oculto para enviar la selección -->
+                    <input type="hidden" name="Tipo" id="hidden-tipo" value="Todos">
+                </fieldset>
+
+                <!-- Enlace a archivo de JavaScript para la funcionalidad del select -->
+                <script src="scripts\select.js"></script>
+
+                <!-- Botón para enviar el formulario -->
+                <input type="submit" name="btnBuscar" value="Buscar Restaurante">
+            </form>
+        </section>
+
+        <!-- Sección de lugares destacados -->
+        <section id="normal">
+            <p>Disfruta de los lugares más aclamados:</p>
+
+            <!-- Artículo con enlaces a restaurantes populares -->
+            <article>
+                <!-- Restaurante: A Quinta da Cera -->
+                <figure>
+                    <a href=https://www.quintadacera.com>
+                        <picture>
+                            <source srcset="../images/DondeComer/quintaCera.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/quintaCera.jpg">
+                        </picture>
+                        <figcaption>A quinta da cera</figcaption>
+                    </a>
+                </figure>
+
+                <!-- Restaurante: Taperia Parrillada Tamega -->
+                <figure>
+                    <a href=https://www.facebook.com/people/Taperia-tamega/100071481552329/?sk=about>
+                        <picture>
+                            <source srcset="../images/DondeComer/TaperiaParrilladaTamega.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/TaperiaParrilladaTamega.jpg">
+                        </picture>
+                        <figcaption>Taperia parrillada Tamega</figcaption>
+                    </a>
+                </figure>
+
+                <!-- Restaurante: Mesón do Emil -->
+                <figure>
+                    <a href=https://www.google.es/maps/place/Mes%C3%B3n+Do+Emil>
+                        <picture>
+                            <source srcset="../images/DondeComer/MesonEmil.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/MesonEmil.jpg">
+                        </picture>
+                        <figcaption>Meson do emil</figcaption>
+                    </a>
+                </figure>
+
+                <!-- Restaurante: A Casa do Pulpo -->
+                <figure>
+                    <a href=https://www.acasadopulpo.es/es>
+                        <picture>
+                            <source srcset="../images/DondeComer/casaPulpo.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/casaPulpo.jpg">
+                        </picture>
+                        <figcaption>A casa do pulpo</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+            <p>¡Dale una oportunidad a los nuevos negocios!</p>
+
+            <!-- Artículo con enlaces a nuevos negocios -->
+            <article>
+                <!-- Restaurante: Luan's Cafe Burger -->
+                <figure>
+                    <a href=https://www.google.es/maps/place/LUAN%E2%80%99S+caf%C3%A9+burguer>
+                        <picture>
+                            <source srcset="../images/DondeComer/LuanCafeBurger.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/LuanCafeBurger.jpg">
+                        </picture>
+                        <figcaption>Luan's cafe burger</figcaption>
+                    </a>
+                </figure>
+
+                <!-- Restaurante: Pizzería Italia -->
+                <figure>
+                    <a href=https://www.google.es/maps/place/Italia>
+                        <picture>
+                            <source srcset="../images/DondeComer/PizzeriaItalia.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/PizzeriaItalia.jpg">
+                        </picture>
+                        <figcaption>Pizzeria Italia</figcaption>
+                    </a>
+                </figure>
+
+                <!-- Restaurante: Restaurante Bar Ó Fiadeiro -->
+                <figure>
+                    <a href=https://gastroranking.es/r/o-fiadeiro_103294>
+                        <picture>
+                            <source srcset="../images/DondeComer/RestauranteBarFiadeiro.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/RestauranteBarFiadeiro.jpg">
+                        </picture>
+                        <figcaption>Restaurante Bar Ó Fiadeiro</figcaption>
+                    </a>
+                </figure>
+
+                <!-- Restaurante: Casa Nela -->
+                <figure>
+                    <a href=https://www.google.es/maps/place/Restaurante+Nela>
+                        <picture>
+                            <source srcset="../images/DondeComer/CasaNela.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/DondeComer/CasaNela.jpg">
+                        </picture>
+                        <figcaption>Casa Nela</figcaption>
+                    </a>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <!-- Script para los efectos de las imágenes -->
+    <script src="scripts/efectoImagen.js"></script>
+</body>
+
+</html>

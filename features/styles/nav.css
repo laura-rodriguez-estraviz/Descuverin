@@ -1,0 +1,187 @@
+/*La página donde me encuentro aparece coloreada en el nav*/
+.resaltado {
+    color: #cca57d;
+}
+
+
+/*Estilo del nav en general*/
+nav{
+    text-transform: uppercase;
+    color:#9a9a7e;
+    font-family: "Contrail One";
+    font-size:28px;
+    line-height: normal;
+    background-color: #2e2a20;
+    padding-right: 40px;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    height: 90px ; 
+}
+
+/*Formateo de la imágen del logo*/
+/* Estilo para la figura donde se encuentra el logo */
+nav figure {
+    margin: 0;
+    padding: 0;
+    padding-left:50px;
+    height: 100%;
+}
+
+/* Estilo para la imagen rn si */
+nav img {
+    margin-top: 2px;
+    margin-right: 50px; /* Espaciado entre la imagen y la lista */
+    width: auto;
+}
+
+
+/* Estilo para los elementos de la lista dentro del nav (alojamiento, donde comer etc.)*/
+/*Lista*/
+nav ul {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: auto;
+    gap: 70px;
+}
+
+/*Elementos de la lista*/
+nav ul li {
+    margin: 0;
+}
+
+/*Enlaces dentro de los elementos de la lista*/
+nav ul li a {
+    text-decoration: none;
+    color: #9a9a7e;
+    font-size: 30px;
+}
+
+
+/*Formato para las tres líneas que se muestran a la derecha en pantallas pequeñas*/
+#hamburguesa{
+    margin-top: 0px;
+    line-height: normal;
+    opacity: 0;/*Se oculta cuando la pantalla es grande*/
+    height: 100%;
+    position: absolute;
+    right: 0; 
+    padding-right: 30px;
+    font-size: 50px;
+}
+
+
+/*Responsividad del menu*/
+@media (max-width: 1450px) {
+    /*Estilo del nav en general*/
+    nav {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align:start;
+        position: relative;
+        transition: height 0.3s ease-in-out;
+        height: 90px;
+    }
+
+    /* Cuando el nav está activo, se expande */
+    nav.active {
+        text-align: center;
+        height: 300px;
+    }
+
+
+    /*Formateo de la imágen del logo*/
+    /*figure donde esta el logo*/
+    nav figure {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Link de la imagen*/
+    nav figure a{
+        display:block;
+        height: 100%;
+    }
+
+    /*Figure con el menu abierto*/
+    nav.active figure{
+        width: auto;
+        height: auto;
+    }
+
+    /*Link con el menu abierto*/
+    nav.active figure a {
+        position:relative;
+        z-index: 2;
+    }
+
+
+    /* Estilo para los elementos de la lista dentro del nav (alojamiento, donde comer etc.)*/
+    /*Lista en general*/
+    nav ul {
+        opacity: 0;
+        position: absolute;
+        padding-top: 100px;
+        padding-right: 0px;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* Lista cuando el menú está abierto */
+    nav.active ul {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Elementos de la lista */
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Links de la lista*/
+    nav ul li a {
+        font-size: 24px;
+    }
+
+
+    /*Clases que se añaden en js a la lista del menu para que esta aparezca y desaparezca delicadamente al pasar el puntero por el nav*/
+    /* Cuando el elemento aparece */
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;  /* Aparece con ease-out */
+    }
+    
+    /* Cuando el elemento desaparece */
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.1s ease-in;  /* Desaparece con ease-in */
+    }
+  
+
+    /*Formato para las tres líneas que se muestran a la derecha en pantallas pequeñas*/
+    /*Con el menu cerrado*/
+    #hamburguesa{
+        opacity: 1;
+    }
+
+    /* Con el menu abierto */
+    nav.active #hamburguesa{
+        opacity: 0;
+    }
+}
+
+

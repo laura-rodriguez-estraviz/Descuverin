@@ -1,0 +1,60 @@
+{
+    "marcadores": [
+      {
+        "nombre": "Playa fluvial o Coiñedo",
+        "lat": 42.251404847196305,
+        "lng": -7.033616015342701,
+        "descripcion": "Un hermoso paraje natural para disfrutar del agua y la tranquilidad.",
+        "enlace": "https://maps.app.goo.gl/spvCxtyKHPXhTEbc8"
+      },
+      {
+        "nombre": "Casino en Chaves",
+        "lat": 41.76190855704117,
+        "lng": -7.488523988356751,
+        "descripcion": "Un elegante casino para los amantes del juego y el entretenimiento.",
+        "enlace": "https://maps.app.goo.gl/67LLfoVLfYZmwwua6"
+      },
+      {
+        "nombre": "Parapente sobre el Larouco",
+        "lat": 41.83250618082428,
+        "lng": -7.786712128835675,
+        "descripcion": "Vive la adrenalina del parapente con vistas espectaculares.",
+        "enlace": "https://www.galiciaparapente.com/serra-do-larouco-baltar/"
+      },
+      {
+        "nombre": "Balneario de Cabreiroa",
+        "lat": 41.92643990448732,
+        "lng": -7.422409701849728,
+        "descripcion": "Un balneario famoso por sus aguas termales y propiedades relajantes.",
+        "enlace": "https://www.galiciamaxica.eu/galicia/ourense/comarca-de-verin/verin/balneario-de-cabreiroa/"
+      },
+      {
+        "nombre": "Rutas de observacion de aves",
+        "lat": 41.81209892498794,
+        "lng": -7.422509084657299,
+        "descripcion": "Descubre la biodiversidad de la región en estas rutas de avistamiento de aves.",
+        "enlace": "https://es.visitchavesverin.com/pages/752?poi_id=16"
+      },
+      {
+        "nombre": "Mercado de Chaves",
+        "lat": 41.74883163013069,
+        "lng": -7.466620813492973,
+        "descripcion": "Un mercado local donde encontrarás productos frescos y artesanales.",
+        "enlace": "https://www.google.es/maps/place/Mercado+Municipal+de+Chaves"
+      },
+      {
+        "nombre": "Centro astronómico de Trevinca",
+        "lat": 42.22053970793745,
+        "lng": -6.98595455767135,
+        "descripcion": "Un centro astronómico ideal para la observación de estrellas y planetas.",
+        "enlace": "https://astrotrevinca.com"
+      },
+      {
+        "nombre": "Club Hípico Cigarrón Monterrei",
+        "lat": 41.91761171831716,
+        "lng": -7.445652659521077,
+        "descripcion": "Disfruta de la equitación en un entorno natural impresionante.",
+        "enlace": "https://www.google.es/maps/place/Club+H%C3%ADpico+Cigarr%C3%B3n+Monterrei"
+      }
+    ]
+}

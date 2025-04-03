@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8">
+    <title>DescuVerin</title>
+    <meta name="description" content="Esta página está dedicada al fomento del turismo en Verín, proporcionando información de interés al viajero como alojamiento, restaurantes, actividades, etc.">
+    <meta name="keywords" content="Verín, transporte, actividades, qué hacer, qué ver, restaurantes">
+    <meta name="author" content="Laura Rodríguez Estraviz y Alex Romay Arcos">
+    
+    <!-- Estilos y scripts -->
+    <link rel="stylesheet" href="styles/otros/bootstrap.css">
+    <script src="styles/otros/bootstrap.js"></script>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/transporte.css">
+
+    <!-- Importación de fuentes de Google -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure>
+                <!-- Logo con enlace a la página principal -->
+                <a href="Index.html">
+                    <img src="../images/Logo.png" id="menu-toggle" alt="Logo DescuVerin">
+                </a>
+            </figure>
+
+            <!-- Icono de menú hamburguesa para dispositivos móviles -->
+            <p id="hamburguesa">☰</p>
+
+            <!-- Menú de navegación principal -->
+            <ul id="menu" name="MENU" style="bottom: 0px;">
+                <li><a href="Alojamientos.html">Alojamientos</a></li>
+                <li><a href="Transporte.html" class="resaltado">Transporte</a></li>
+                <li><a href="DondeComer.html">Dónde Comer</a></li>
+                <li><a href="QueHacer.html">Qué hacer</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Script para la funcionalidad del menú en dispositivos móviles -->
+        <script src="scripts/navTelef.js"></script>
+    </header>
+
+    <main>
+        <!-- Sección de taxis -->
+        <section class="taxis">
+            <h1>Taxis:</h1>
+            <ul>
+                <li>Taxi Moncho (7 plazas): +34 616 22 05 71</li>
+                <li>Taxi Miguel Álvarez Fernández (5 plazas): +34 653 29 90 82</li>
+                <li>Taxi David Correa (8 plazas): +34 660 92 19 09</li>
+                <li>Taxi Mino González Fernández (7 plazas): +34 639 38 30 35</li>
+            </ul>
+        </section>
+
+        <!-- Sección de buses -->
+        <section>
+            <div class="container">
+                <h1>Buses:</h1>
+                <div class="row">
+                    <!-- Información de rutas de autobuses -->
+                    <article class="col-12 col-md-4">
+                        <figure><img src="../images/transporte/Rutas_autobus.png" alt="Mapa de rutas de autobuses"></figure>
+                        <ul class="separado">
+                            <li>Desde Xinzo de Limia: 3,30€</li>
+                            <li>Desde Santiago: 15,60€</li>
+                            <li>Desde Ourense: 6,60€</li>
+                            <li>Desde Barcelona: 66,50€</li>
+                        </ul>
+                    </article>
+
+                    <!-- Información sobre paradas de autobuses -->
+                    <article class="col-12 col-md-4">
+                        <h2>Paradas</h2>
+                        <figure><img src="../images/transporte/Marquesina.png" alt="Marquesina de autobús"></figure>
+                        <ul>
+                            <li><a href="https://www.google.es/maps/search/bus+stop/">Mapa de paradas</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Información sobre empresas de autobuses -->
+                    <article class="col-12 col-md-4">
+                        <h2>Empresas</h2>
+                        <figure><img src="../images/transporte/Autobus.png" alt="Imagen de autobús"></figure>
+                        <ul>
+                            <li><a href="https://www.monbus.es/es">Monbus</a></li>
+                            <li><a href="http://www.socitransa.com">Socitransa</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de trenes -->
+        <section>
+            <div class="row">
+                <h1>Trenes:</h1>
+                <article class="col-12 col-md-3" id="tren"></article>
+                <article class="col-12 col-md-3" id="tren">
+                    <h2><a href="https://www.google.es/maps/search/train+stop/">Paradas</a></h2>
+                </article>
+                <article class="col-12 col-md-3" id="tren">
+                    <h2><a href="https://www.adif.es/w/08251-a-gudi%C3%B1a-p.galicia">Horarios</a></h2>
+                </article>
+                <div class="container">
+                    <figure class="tren"><img src="../images/transporte/Tren.png" alt="Imagen de tren"></figure>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

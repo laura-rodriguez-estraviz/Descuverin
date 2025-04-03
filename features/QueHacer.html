@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Título de la página -->
+    <title>DescuVerin</title>
+
+    <!-- Descripción de la página (para SEO) -->
+    <meta name="description" content="Esta página está dedicada al fomento del turismo en Verín, proporcionando información de interés al viajero como alojamiento, restaurantes, actividades etc.">
+
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Verín, transporte, actividades, qué hacer, qué ver, restaurantes">
+
+    <!-- Autores de la página -->
+    <meta name="author" content="Laura Rodríguez Estraviz y Alex Romay Arcos">
+
+    <meta charset="UTF-8">
+
+    <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/queHacer.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/buscar.css">
+
+    <!-- Importación de la fuente desde Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+    </style>
+
+    <!-- Enlace a jQuery -->
+    <script src="styles/otros/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+    <!-- Cabecera de la página con menú de navegación -->
+    <header>
+        <nav>
+            <!-- Logo de la página -->
+            <figure>
+                <a href="Index.html">
+                    <img src="../images/Logo.png" id="menu-toggle">
+                </a>
+            </figure>
+
+            <!-- Icono del menú hamburguesa -->
+            <p id="hamburguesa">☰</p>
+
+            <!-- Menú de navegación -->
+            <ul id="menu" name="MENU">
+                <li><a href="Alojamientos.html">Alojamientos</a></li>
+                <li><a href="Transporte.html">Transporte</a></li>
+                <li><a href="DondeComer.html">Dónde Comer</a></li>
+                <li><a href="QueHacer.html" class="resaltado">Qué hacer</a></li>
+            </ul>
+        </nav>
+
+        <!-- Script para la funcionalidad del menú hamburguesa -->
+        <script src="scripts/navTelef.js"></script>
+    </header>
+
+    <main>
+        <!-- Sección de búsqueda de actividades -->
+        <section id="buscar">
+            <form action="Mapa.html" method="GET">
+                <!-- Campo de selección de zona -->
+                <fieldset id="campo1">
+                    <legend>Zona:</legend>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="select-box">Todos</div>
+                        <div class="custom-options" id="options-box">
+                            <div data-value="Todos">Todos</div>
+                            <div data-value="Monterrei">Monterrei</div>
+                            <div data-value="Laza">Laza</div>
+                            <div data-value="Verín">Verín</div>
+                            <div data-value="Castrelo do Val">Castrelo do Val</div>
+                            <div data-value="Cualedro">Cualedro</div>
+                            <div data-value="Oímbra">Oímbra</div>
+                            <div data-value="Vilardevós">Vilardevós</div>
+                            <div data-value="Riós">Riós</div>
+                            <div data-value="A Gudiña">A Gudiña</div>
+                            <div data-value="A Mezquita">A Mezquita</div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="Zona" id="hidden-zona" value="Todos">
+                </fieldset>
+
+                <!-- Campo de selección de tipo de actividad -->
+                <fieldset id="campo2">
+                    <legend>Tipo:</legend>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="tipo-select-box">Todos</div>
+                        <div class="custom-options" id="tipo-options-box">
+                            <div data-value="Todos">Todos</div>
+                            <div data-value="Con niños">Con niños</div>
+                            <div data-value="Deporte">Deporte</div>
+                            <div data-value="Relajante">Relajante</div>
+                            <div data-value="Cultural">Cultural</div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="Tipo" id="hidden-tipo" value="Todos">
+                </fieldset>
+
+                <!-- Enlace al script de selección personalizada -->
+                <script src="scripts/select.js"></script>
+
+                <!-- Botón para enviar el formulario -->
+                <input type="submit" name="btnBuscar" value="Buscar Actividades">
+            </form>
+        </section>
+
+        <!-- Sección principal de actividades -->
+        <section id="normal">
+
+            <p class="p1">¿Te gusta la aventura? ¡Atrévete con algo nuevo!</p>
+            <article>
+                <!-- Actividades con enlaces a sitios de interés -->
+                <figure>
+                    <a href="https://maps.app.goo.gl/spvCxtyKHPXhTEbc8">
+                        <picture>
+                            <source srcset="../images/QueHacer/PlayaFluvialCoinedo.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/PlayaFluvialCoinedo.jpg">
+                        </picture>
+                        <figcaption>Playa fluvial o Coiñedo</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://maps.app.goo.gl/67LLfoVLfYZmwwua6">
+                        <picture>
+                            <source srcset="../images/QueHacer/HotelCasinoChaves.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/HotelCasinoChaves.jpg">
+                        </picture>
+                        <figcaption>Casino en Chaves</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.galiciaparapente.com/serra-do-larouco-baltar">
+                        <picture>
+                            <source srcset="../images/QueHacer/parapente.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/parapente.jpg">
+                        </picture>
+                        <figcaption>Parapente sobre el Larouco</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.galiciamaxica.eu/galicia/ourense/comarca-de-verin/verin/balneario-de-cabreiroa">
+                        <picture>
+                            <source srcset="../images/QueHacer/BalnearioCabreiroa.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/BalnearioCabreiroa.jpg">
+                        </picture>
+                        <figcaption>Balneario de Cabreiroa</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+            <p>Asegura terreno probando lo que a muchos otros les ha encantado.</p>
+            <article>
+                <!-- Otras actividades recomendadas -->
+                <figure>
+                    <a href="https://es.visitchavesverin.com/pages/752?poi_id=16">
+                        <picture>
+                            <source srcset="../images/QueHacer/RutasObservacionAves.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/RutasObservacionAves.jpg">
+                        </picture>
+                        <figcaption>Rutas de observación de aves</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.google.es/maps/place/Mercado+Municipal+de+Chaves/@41.7485995,-7.4692279,17z/data=!4m14!1m7!3m6!1s0xd3adfac5796c43d:0x281a23c108a280ab!2sMercado+Municipal+de+Chaves!8m2!3d41.7485995!4d-7.466653!16s%2Fg%2F11h_bzggwp!3m5!1s0xd3adfac5796c43d:0x281a23c108a280ab!8m2!3d41.7485995!4d-7.466653!16s%2Fg%2F11h_bzggwp?hl=es&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">
+                        <picture>
+                            <source srcset="../images/QueHacer/MercadoChaves.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/MercadoChaves.jpg">
+                        </picture>
+                        <figcaption>Mercado de Chaves</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://astrotrevinca.com">
+                        <picture>
+                            <source srcset="../images/QueHacer/Astrotrevinca.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/Astrotrevinca.jpg">
+                        </picture>
+                        <figcaption>Centro astronómico de Trevinca</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.google.es/maps/place/Club+H%C3%ADpico+Cigarr%C3%B3n+Monterrei/@41.9174281,-7.448131,17z/data=!3m1!4b1!4m6!3m5!1s0xd3ac1f8ed88bfb1:0x9d6913de783a5a19!8m2!3d41.9174281!4d-7.4455561!16s%2Fg%2F11fy_4x4sx?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">
+                        <picture>
+                            <source srcset="../images/QueHacer/ClubHipicaMonterrei.jpg" media="(min-width:1468px)">
+                            <img src="../images/imagenesGrandes/QueHacer/ClubHipicaMonterrei.jpg">
+                        </picture>
+                        <figcaption>Club Hípico Cigarrón Monterrei</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Script para el efecto de las imágenes -->
+    <script src="scripts/efectoImagen.js"> </script>
+
+</body>
+
+</html>

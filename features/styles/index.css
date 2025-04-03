@@ -1,0 +1,53 @@
+p{
+    display: inline-block;
+    font-size:28px;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+footer p{
+    font-size:24px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 40px;
+    color:#6e6f50;
+    font-family: "Contrail One";
+}
+
+h1{
+    margin-bottom: 5px; 
+    color:#6e6f50;
+    font-size:36px;
+}
+
+footer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    grid-column: 1 / 25; /* Ocupar todas las 24 columnas */
+    margin-bottom: 25px;
+}
+
+hr {
+    width: 100%;
+    border: none; /* Elimina el borde predeterminado */
+    height: 1px; /* Altura de la línea */
+    background-color: #9a9a7e; /* Color de la línea */
+}
+
+section{
+    grid-column: 2 / 24;
+}
+
+ section figure{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 70px;
+    width:min-content;
+    display: inline-block;
+}
+
+section p{
+    display: inline-block;
+    width: 675px;
+}

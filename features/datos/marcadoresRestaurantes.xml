@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores>
+    <marcador>
+        <nombre>A Quinta da Cera</nombre>
+        <lat>41.73608740319174</lat>
+        <lng>-7.481704571164418</lng>
+        <descripcion>Un rincón lleno de tradición donde la naturaleza y el buen comer se dan la mano. ¡Un lugar perfecto para disfrutar de la auténtica cocina portuguesa!</descripcion>
+        <link>https://www.quintadacera.com</link>
+    </marcador>
+    <marcador>
+        <nombre>Taperia Parrillada Tamega</nombre>
+        <lat>41.94019749509466</lat>
+        <lng>-7.425108542328834</lng>
+        <descripcion>¿Antojo de parrillada? Este es el lugar ideal para saborear los mejores platos a la brasa de la región, acompañados de una buena copa de vino.</descripcion>
+        <link>https://www.facebook.com/people/Taperia-tamega/100071481552329/?sk=about</link>
+    </marcador>
+    <marcador>
+        <nombre>Mesón Emil</nombre>
+        <lat>41.9403947110577</lat>
+        <lng>-7.439520128835582</lng>
+        <descripcion>Un mesón con mucha historia y un ambiente acogedor, donde disfrutar de las recetas tradicionales gallegas con un toque moderno. ¡No te lo puedes perder!</descripcion>
+        <link>https://maps.app.goo.gl/7YMBeCdVBMJnTfuE6</link>
+    </marcador>
+    <marcador>
+        <nombre>A Casa do Pulpo</nombre>
+        <lat>41.93931583559527</lat>
+        <lng>-7.437888373495654</lng>
+        <descripcion>Si eres fan del pulpo, este es tu lugar. En A Casa do Pulpo, el plato estrella es el pulpo a la gallega, preparado como manda la tradición.</descripcion>
+        <link>https://www.acasadopulpo.es/es</link>
+    </marcador>
+    <marcador>
+        <nombre>Luans Café Burguer</nombre>
+        <lat>41.93793145984111</lat>
+        <lng>-7.434727257671164</lng>
+        <descripcion>Un lugar informal, pero con un menú lleno de sabores irresistibles. Perfecto para disfrutar de una hamburguesa gourmet o un café mientras te relajas.</descripcion>
+        <link>https://maps.app.goo.gl/jLwwyfcXUtuh8h5LA</link>
+    </marcador>
+    <marcador>
+        <nombre>Pizzería Italia</nombre>
+        <lat>41.94055309393757</lat>
+        <lng>-7.433477086506747</lng>
+        <descripcion>Si te apetece una buena pizza en un ambiente acogedor, no dudes en visitar Pizzería Italia. Con ingredientes frescos y una masa irresistible.</descripcion>
+        <link>https://maps.app.goo.gl/gTM416NeVvxdNxHe8</link>
+    </marcador>
+    <marcador>
+        <nombre>Restaurante Bar O Fiadeiro</nombre>
+        <lat>41.95353133062658</lat>
+        <lng>-7.429598130684662</lng>
+        <descripcion>Un restaurante que te invita a disfrutar de la gastronomía gallega más auténtica, en un ambiente familiar y con una atención inmejorable. ¡El paraíso de los sabores!</descripcion>
+        <link>https://gastroranking.es/r/o-fiadeiro_103294</link>
+    </marcador>
+    <marcador>
+        <nombre>Casa Nela</nombre>
+        <lat>41.94132756738884</lat>
+        <lng>-7.437761928835583</lng>
+        <descripcion>En Casa Nela encontrarás el verdadero sabor de la cocina rural gallega. Un lugar tranquilo, perfecto para desconectar y disfrutar de los productos locales.</descripcion>
+        <link>https://maps.app.goo.gl/8o3ndVMSyBBTDsMg8</link>
+    </marcador>
+</marcadores>

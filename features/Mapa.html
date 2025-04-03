@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Título de la página -->
+    <title>DescuVerin</title>
+        
+    <!-- Descripción de la página (para SEO) -->
+    <meta name="description" content="Esta página está dedicada al fomento del turismo en Verín, proporcionando información de interés al viajero como alojamiento, restaurantes, actividades etc.">
+
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Verín, transporte, actividades, qué hacer, qué ver, restaurantes">
+
+    <!-- Autores de la página -->
+    <meta name="author" content="Laura Rodríguez Estraviz y Alex Romay Arcos">
+    
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+   
+    <!-- Importación de fuente externa -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+    </style>
+
+    <!-- Enlace a la librería de Leaflet para el mapa -->
+    <link rel="stylesheet" href="styles\otros\leaflet\leaflet.css" />
+
+    <!-- Enlaces a los archivos CSS -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/buscar.css">
+    <link rel="stylesheet" href="styles/mapa.css">
+    
+    <!-- Enlace al archivo jQuery -->
+    <script src="styles/otros/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+    <!-- Formulario de búsqueda de opciones de alojamiento, restaurantes y actividades -->
+    <form action="Mapa.html" method="GET">
+        
+        <!-- Sección de Alojamientos -->
+        <fieldset>
+            <legend>Alojamientos:</legend>
+            <!-- Checkbox para seleccionar alojamientos -->
+            <input type="checkbox" name="alojamiento"> 
+            
+            <!-- Selector de zona para alojamientos -->
+            <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-zona-alojamiento">Zona</div>
+                <div class="custom-options" id="options-zona-alojamiento">
+                    <div data-value="" disabled selected>Zona</div>
+                    <div data-value="Monterrei">Monterrei</div>
+                    <div data-value="Laza">Laza</div>
+                    <div data-value="Verín">Verín</div>
+                    <div data-value="Castrelo do Val">Castrelo do Val</div>
+                    <div data-value="Cualedro">Cualedro</div>
+                    <div data-value="Oímbra">Oímbra</div>
+                    <div data-value="Vilardevós">Vilardevós</div>
+                    <div data-value="Riós">Riós</div>
+                    <div data-value="A Gudiña">A Gudiña</div>
+                    <div data-value="A Mezquita">A Mezquita</div>
+                </div>
+            </div>
+            
+            <!-- Selector de tipo de alojamiento -->
+            <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-tipo-alojamiento">Tipo</div>
+                <div class="custom-options" id="options-tipo-alojamiento">
+                    <div data-value="Hoteles">Hoteles</div>
+                    <div data-value="Casas Rurales">Casas Rurales</div>
+                    <div data-value="Pensiones">Pensiones</div>
+                    <div data-value="Apartamentos turísticos">Apartamentos turísticos</div>
+                    <div data-value="Campings">Campings</div>
+                    <div data-value="Albergues">Albergues</div>
+                </div>
+            </div>
+        </fieldset>
+        
+        <!-- Sección de Restaurantes -->
+        <fieldset>
+            <legend>Restaurantes:</legend>
+            <!-- Checkbox para seleccionar restaurantes -->
+            <input type="checkbox" name="restaurantes"> 
+            
+            <!-- Selector de zona para restaurantes -->
+            <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-zona-restaurantes">Zona</div>
+                <div class="custom-options" id="options-zona-restaurantes">
+                    <div data-value="Monterrei">Monterrei</div>
+                    <div data-value="Laza">Laza</div>
+                    <div data-value="Verín">Verín</div>
+                    <div data-value="Castrelo do Val">Castrelo do Val</div>
+                    <div data-value="Cualedro">Cualedro</div>
+                    <div data-value="Oímbra">Oímbra</div>
+                    <div data-value="Vilardevós">Vilardevós</div>
+                    <div data-value="Riós">Riós</div>
+                    <div data-value="A Gudiña">A Gudiña</div>
+                    <div data-value="A Mezquita">A Mezquita</div>
+                </div>
+            </div>
+            
+            <!-- Selector de tipo de restaurante -->
+            <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-tipo-restaurantes">Tipo</div>
+                <div class="custom-options" id="options-tipo-restaurantes">
+                    <div data-value="Comida española">Comida española</div>
+                    <div data-value="Comida italiana">Comida italiana</div>
+                    <div data-value="Comida portuguesa">Comida portuguesa</div>
+                    <div data-value="Económico">Económico</div>
+                    <div data-value="5 estrellas">5 estrellas</div>
+                    <div data-value="Comida china">Comida china</div>
+                    <div data-value="Vegano">Vegano</div>
+                </div>
+            </div>
+        </fieldset>
+        
+        <!-- Sección de Actividades -->
+        <fieldset>
+            <legend>Actividades:</legend>
+            <!-- Checkbox para seleccionar actividades -->
+            <input type="checkbox" name="actividades"> 
+            
+            <!-- Selector de zona para actividades -->
+            <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-zona-actividades">Zona</div>
+                <div class="custom-options" id="options-zona-actividades">
+                    <div data-value="Monterrei">Monterrei</div>
+                    <div data-value="Laza">Laza</div>
+                    <div data-value="Verín">Verín</div>
+                    <div data-value="Castrelo do Val">Castrelo do Val</div>
+                    <div data-value="Cualedro">Cualedro</div>
+                    <div data-value="Oímbra">Oímbra</div>
+                    <div data-value="Vilardevós">Vilardevós</div>
+                    <div data-value="Riós">Riós</div>
+                    <div data-value="A Gudiña">A Gudiña</div>
+                    <div data-value="A Mezquita">A Mezquita</div>
+                </div>
+            </div>
+            
+            <!-- Selector de tipo de actividad -->
+            <div class="custom-select-wrapper">
+                <div class="custom-select" id="select-tipo-actividades">Tipo</div>
+                <div class="custom-options" id="options-tipo-actividades">
+                    <div data-value="Con niños">Con niños</div>
+                    <div data-value="Deporte">Deporte</div>
+                    <div data-value="Relajante">Relajante</div>
+                    <div data-value="Cultural">Cultural</div>
+                </div>
+            </div>
+        </fieldset>
+        
+        <!-- Enlace al archivo JavaScript para manejar los selectores personalizados -->
+        <script src="scripts\select.js"></script> 
+
+        <!-- Contenedor del botón de búsqueda -->
+        <div class="submit-container">
+            <input type="submit" name="btnBuscar" value="Buscar">
+        </div>
+    </form>
+
+    <!-- Mapa -->
+    <div id="map"></div>
+
+    <!-- Enlace a la librería Leaflet para el mapa -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts/mapa.js"></script>
+
+</body>
+
+</html>

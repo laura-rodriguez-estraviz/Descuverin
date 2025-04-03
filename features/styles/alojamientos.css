@@ -1,0 +1,141 @@
+p{
+    font-size:32px;
+    margin-top: 0px;
+
+}
+
+/* El primer fieldset del form */
+#campo1{
+    margin: 0 auto;
+}
+/* El segundo fieldset del form */
+#campo2{
+    margin: 0 auto;
+}
+
+section{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: clamp(50px, 10%, 1fr) 1fr 1fr clamp(50px, 10%, 1fr);
+    margin-bottom: 20px;
+}
+
+/* Para la animación de zoom */
+section figure {
+    float: left;
+    transition: transform 0.3s ease-in-out, z-index 0s 0.3s;
+    z-index: 0;
+}
+
+/* Ajuste de imágenes */
+section figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px; /* Bordes redondeados */
+    border: 3px solid #2e2a20; 
+}
+
+/* Cada figura respectivamente dentro del bloque de 4 */
+#fig1{
+    margin: 0 auto;
+    grid-column: 1;
+}
+#fig2{
+    margin: 0 auto;
+    grid-column: 2;
+}
+#fig3{
+    margin: 0 auto;
+    grid-column: 3;
+}
+#fig4{
+    margin: 0 auto;
+    grid-column: 4;
+}
+
+/* media para pantallas medianas */
+@media (max-width: 1250px) {
+    article{
+        display: grid;
+        grid-template-columns: clamp(50px, 10%, 1fr) clamp(50px, 10%, 1fr);
+        
+        margin-bottom: 20px;
+    }
+ 
+    img{
+        width: 100%;
+    }
+
+    /* Se reduce un poco el tamaño de las imagenes y se añade separación entre ellas */    
+    #fig1{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+    #fig2{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 2;
+        margin-bottom: 20px;
+    }
+    #fig3{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+    #fig4{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 2;
+    }
+}
+
+/* media para pantallas pequeñas */
+@media(max-width: 900px){
+    
+    
+    input[type="submit"]{
+        grid-column: 2/4;
+        
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: clamp(50px, 10%, 1fr);
+        margin-bottom: 20px;
+    }
+
+    /* Se reduce un poco el tamaño de las imagenes y se añade separación entre ellas */  
+    #fig1{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+    #fig2{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+    #fig3{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1;
+        margin-bottom: 20px;
+    }
+    #fig4{
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1;
+    }
+}

@@ -1,0 +1,145 @@
+/* Estilo general del body */
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+/*Formato del div que contiene el mapa*/
+#map { 
+    width: 100%; 
+    z-index: 0;  
+    float:right;
+}
+
+/*Formato de los popup cuando pasas el ratón por un marcador*/
+/*El enlace de ver mas*/
+.leaflet-popup-content a {
+    text-decoration: underline;
+    color: #cca57d; 
+}
+
+/*Al pulsar sobre el enlace*/
+.leaflet-popup-content a:not(:hover) {
+    color: #9a9a7e; 
+}
+
+/*todo el contenido del popup*/
+.leaflet-popup-content {
+    font-family: helvetica-world-regular;
+    color: #9a9a7e; 
+}
+
+/*El título del popup*/
+.leaflet-popup-content b {
+    font-size: 14px;
+    color: #cca57d;
+    font-family: "Contrail One", serif;
+    font-weight: normal;
+}
+
+
+/* Formato del formulario */
+/*Formulario en sí*/
+form {
+    scale: 0.6;
+    transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Se mantiene fijo en la pantalla */
+    top: 20px;
+    left: 20px;
+    background-color: #f8f8f3;
+    border: 5px solid #cca57d;
+    border-radius: 30px;
+    padding-inline: 5px;
+    padding-top: 20px;
+    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que está por encima del mapa */
+}
+
+/* Estilo para los fieldsets */
+fieldset {
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio entre los fieldsets */
+    position: relative; /* Necesario para la pseudo-clase ::after */
+    border-bottom: 1px solid  #9a9a7e; /* Quitamos el borde predeterminado */
+}
+
+/*Formato de la leyenda del fieldset*/
+legend{
+    margin-left: 50px;
+}
+
+/*Formato del div que contiene el boton buscar*/
+.submit-container{
+    padding-right: 15px;
+    margin-top:5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Formato del boton de buscar */
+input[type="submit"] {
+    margin: 0px;
+    width: 100px;
+  
+}
+
+/* Formato del check de las checkboxes */
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    font-size: 30px; 
+    font-weight: bold;
+    color: #9a9a7e; 
+    position: absolute;
+    /*Lo colocamos en su sitio*/
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -60%); 
+}
+
+/* Formato Checkboxes */
+input[type="checkbox"] {
+    align-self: center;
+    appearance: none; /* Elimina el estilo predeterminado */
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    position:relative;
+    border: 1px solid #2e2a20; 
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/*Responsividad*/
+@media (max-width: 900px) {
+    /*Disminuimos el ancho del formulario*/
+    form {
+        width: 250px;  
+    }
+    
+    /*Ponemos el contenido de los fieldset en columnas y centrado*/
+    fieldset {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /*Div que contiene el boton buscar (ponemos el bonton en el medio en vez de a la derecha)*/
+    .submit-container{
+        padding-right: 0px;
+        justify-content: center;
+    }
+}

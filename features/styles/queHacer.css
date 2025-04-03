@@ -1,0 +1,108 @@
+
+
+section figure img{
+    border-radius: 15px; /* Bordes redondeados */
+    border: 3px solid #2e2a20; 
+    
+}
+
+section p {
+    text-align: center;
+    font-size:32px;
+    margin: 0px;
+    padding-left: 38px;
+    padding-right: 26px;
+    border-left: 2px solid #9a9a7e;
+    min-height: 100px;
+}
+
+/* Se quita el borde al primer p */
+p.p1{
+    border: none;
+}
+
+/* Contenedor principal */
+#normal {
+    column-count: 2; /* 2 bloques por fila */
+    column-gap: 0px;
+}
+
+section {
+    position: relative;
+}
+
+/* Cada article actúa como un bloque cuadrado */
+article {
+    display: inline-block;
+    width: 100%;
+    break-inside: avoid; /* Evita que los bloques se corten */
+    margin-bottom: 20px; /* Espacio entre bloques */
+    text-align: center; /* Centra el contenido */
+    border-right: 2px solid #9a9a7e;
+}
+
+/* El último article no tiene borde */
+article:last-child {
+    border-right: none;
+}
+
+/* Contenedor de imágenes dentro de cada bloque */
+article div {
+    column-count: 2; /* 2 imágenes por columna dentro del bloque */
+    column-gap: 10px; /* Espacio entre las imágenes */
+}
+
+/* Imágenes dentro de los bloques */
+section figure {
+    display: inline-block;
+    width: 35%;
+    break-inside: avoid; /* Evita que las imágenes se corten en la columna */
+    min-height: 300px;
+    min-width: 275px;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out, z-index 0s 0.3s;
+    z-index: 0;
+}
+
+/* Formato para la barra de búsqueda */
+#buscar{
+    padding-top:0px ;
+   }
+
+/* media para pantallas pequeñas */
+@media (max-width: 900px) {
+
+    section figure{
+        width: 100%;
+    }
+}
+
+/* media para el primer cambio */
+@media (max-width: 1468px) {
+    
+    #normal {
+        column-count: 1; /* Pasa a haber una columna en la que caben 2 imagenes*/
+    }
+
+    section figure{
+        min-height: auto;
+        min-width: 275px;
+        margin: 15px;
+    }
+
+    section figure img{
+        width: 90%;
+    }
+
+    article div {
+        column-count: 1; /* Pasa a una sola columna dentro de cada bloque */
+    }
+
+    article {
+        border-right: none;
+    }
+
+    section p {
+        border-left: none;
+    }
+}

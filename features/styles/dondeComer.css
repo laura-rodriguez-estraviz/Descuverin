@@ -1,0 +1,90 @@
+p {
+    margin-top: 0px;
+    font-size: 32px;
+    text-align: left;
+}
+
+fieldset { /* Define relleno en los fieldsets */
+    padding-top: 5.6px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px; 
+    text-align: left;
+}
+
+input[type="submit"] {
+    justify-content: left;
+    display: block; /* Hace que el botón se comporte como un bloque, ocupando todo el ancho disponible */
+    min-inline-size: min-content; /* Asegura que el botón tenga el tamaño mínimo según su contenido */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+main {
+    box-sizing: content-box; /* Mantiene el ancho y alto sin incluir padding ni borde en el cálculo */
+}
+
+#normal {
+    padding-top: 0px;
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del tamaño total del elemento */
+}
+
+/* Contenedor principal */
+section {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos dentro se ajusten en múltiples líneas si es necesario */
+    overflow: visible; /* Permite que los elementos sobresalgan del contenedor, relevante para el efecto de zoom de las imágenes */
+    position: relative;
+}
+
+article {
+    box-sizing: border-box;
+    float: left;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+/* Estilo para figuras (imágenes con leyendas) dentro de las secciones */
+section figure {
+    box-sizing: border-box; 
+    float: left; 
+    width: 21%; 
+    margin-inline: 2%; 
+    margin-top: 0px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    transition: transform 0.3s ease-in-out, z-index 0s 0.3s; /* Efecto de animación */
+    z-index: 0; /* Posición en el eje Z */
+}
+
+/* Estilo específico para la barra de búsqueda */
+#buscar {
+    padding-top: 0px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+/* Ajuste de imágenes dentro de las figuras */
+section figure img {
+    border-radius: 15px; 
+    border: 3px solid #2e2a20; 
+    box-sizing: border-box; /* Evita que el padding y el borde afecten el tamaño total */
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+}
+
+/* Ajustes para la legend de los fieldsets */
+legend {
+    padding-inline: 2px; /* Añade un pequeño espaciado horizontal */
+}
+
+/* media para pantallas pequeñas */
+@media (max-width: 900px) {
+    section figure {
+        width: 98%; /* En pantallas pequeñas, las figuras ocupan casi todo el ancho disponible */
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Título de la página -->
+    <title>DescuVerin</title>
+
+    <!-- Descripción de la página (para SEO) -->
+    <meta name="description"
+        content="Esta página está dedicada al fomento del turismo en Verín, proporcionando información de interés al viajero como alojamiento, restaurantes, actividades etc.">
+
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Verín, transporte, actividades, qué hacer, qué ver, restaurantes">
+
+    <!-- Autores de la página -->
+    <meta name="author" content="Laura Rodríguez Estraviz y Alex Romay Arcos">
+
+    <meta charset="UTF-8">
+
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/alojamientos.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/buscar.css">
+
+    <!-- Fuente personalizada -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+    </style>
+
+    <!-- Enlace a jQuery -->
+    <script src="styles/otros/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+    <!-- Cabecera con navegación -->
+    <header>
+        <nav>
+            <figure>
+                <a href="Index.html">
+                    <!-- Logo del sitio -->
+                    <img src="../images/Logo.png" id="menu-toggle">
+                </a>
+            </figure>
+
+            <!-- Icono de menú hamburguesa para dispositivos móviles -->
+            <p id="hamburguesa">
+                ☰
+            </p>
+
+            <!-- Menú de navegación -->
+            <ul id="menu" name="MENU">
+                <li><a href="Alojamientos.html" class="resaltado">Alojamientos</a></li>
+                <li><a href="Transporte.html">Transporte</a></li>
+                <li><a href="DondeComer.html">Dónde Comer</a></li>
+                <li><a href="QueHacer.html">Qué hacer</a></li>
+            </ul>
+        </nav>
+
+        <!-- Script que activa la funcionalidad del menú móvil -->
+        <script src="scripts/navTelef.js"></script>
+    </header>
+
+    <!-- Cuerpo principal de la página -->
+    <main>
+        
+        <!-- Sección de búsqueda de alojamientos -->
+        <section id="buscar">
+            <form id="buscador" action="Mapa.html" method="GET">
+
+                <!-- Filtro por Zona -->
+                <fieldset id="campo1">
+                    <legend>Zona:</legend>
+                    <div class="custom-select-wrapper"> <!-- Contenedor del select personalizado -->
+                        <div class="custom-select" id="select-box">Todos</div> <!-- Elemento visible del select -->
+                        <div class="custom-options" id="options-box"> <!-- Menú desplegable de opciones -->
+                            <div data-value="Todos">Todos</div> <!-- Opción 1 -->
+                            <div data-value="Monterrei">Monterrei</div> <!-- Opción 2 -->
+                            <div data-value="Laza">Laza</div> <!-- Opción 3 -->
+                            <div data-value="Verín">Verín</div> <!-- Opción 4 -->
+                            <div data-value="Castrelo do Val">Castrelo do Val</div> <!-- Opción 5 -->
+                            <div data-value="Cualedro">Cualedro</div> <!-- Opción 6 -->
+                            <div data-value="Oímbra">Oímbra</div> <!-- Opción 7 -->
+                            <div data-value="Vilardevós">Vilardevós</div> <!-- Opción 8 -->
+                            <div data-value="Riós">Riós</div> <!-- Opción 9 -->
+                            <div data-value="A Gudiña">A Gudiña</div> <!-- Opción 10 -->
+                            <div data-value="A Mezquita">A Mezquita</div> <!-- Opción 11 -->
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Filtro por Tipo de alojamiento -->
+                <fieldset id="campo2">
+                    <legend>Tipo:</legend>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="tipo-select-box">Todos</div> <!-- Elemento visible del select -->
+                        <div class="custom-options" id="tipo-options-box"> <!-- Menú desplegable de opciones -->
+                            <div data-value="Todos">Todos</div>
+                            <div data-value="Hoteles">Hoteles</div>
+                            <div data-value="Casas Rurales">Casas Rurales</div>
+                            <div data-value="Pensiones">Pensiones</div>
+                            <div data-value="Apartamentos">Apartamentos</div>
+                            <div data-value="Campings">Campings</div>
+                            <div data-value="Albergues">Albergues</div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Script para el select personalizado -->
+                <script src="scripts\select.js"></script>
+
+                <!-- Botón de envío del formulario -->
+                <input type="submit" name="btnBuscar" value="Buscar Alojamiento">
+            </form>
+        </section>
+
+        <!-- Sección de alojamientos recomendados -->
+        <section id="normal">
+            <p>Échale un vistazo a los alojamientos que más le gustan a nuestros usuarios ;)</p>
+
+            <article>
+
+                <!-- Alojamientos destacados -->
+                <figure id="fig1">
+                    <a href="https://www.booking.com/hotel/es/villa-de-verin.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/villaVerin.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/villaVerin.jpg" alt="Hotel Villa de Verín">
+                        </picture>
+                        <figcaption>Hotel Villa de Verín</figcaption>
+                    </a>
+                </figure>
+
+                <figure id="fig2">
+                    <a href="https://www.booking.com/hotel/es/a-morada-do-cigarron.es.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/moradaCigarron.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/moradaCigarron.jpg" alt="A morada do Cigarrón">
+                        </picture>
+                        <figcaption>A morada do Cigarrón</figcaption>
+                    </a>
+                </figure>
+
+                <figure id="fig3">
+                    <a href="https://www.booking.com/hotel/es/lugano-verin.en-gb.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/lugano.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/lugano.jpg" alt="Lugano">
+                        </picture>
+                        <figcaption>Lugano</figcaption>
+                    </a>
+                </figure>
+
+                <figure id="fig4">
+                    <a href="https://www.booking.com/hotel/es/maior-5-apartamentos.es.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/maior5apartamentos.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/maior5apartamentos.jpg" alt="Maior 5 Apartamentos">
+                        </picture>
+                        <figcaption>Maior 5 Apartamentos</figcaption>
+                    </a>
+                </figure>
+
+            </article>
+
+            <p>o sé el primero en probar los más novedosos...</p>
+
+            <article>
+
+                <!-- Alojamientos más novedosos -->
+                <figure id="fig1">
+                    <a href="https://www.booking.com/hotel/es/casa-abella.es.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/casaAbella.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/casaAbella.jpg" alt="Casa Abella">
+                        </picture>
+                        <figcaption>Casa abella</figcaption>
+                    </a>
+                </figure>
+
+                <figure id="fig2">
+                    <a href="https://www.booking.com/hotel/es/pension-blanco-conde-laza.en-gb.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/casaBlancoConde.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/casaBlancoConde.jpg" alt="Casa Blanco Conde">
+                        </picture>
+                        <figcaption>Casa Blanco Conde</figcaption>
+                    </a>
+                </figure>
+
+                <figure id="fig3">
+                    <a href="https://www.booking.com/hotel/es/gastronomico-gandainas.es.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/gandainas.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/gandainas.jpg" alt="Gandainas">
+                        </picture>
+                        <figcaption>Gandainas</figcaption>
+                    </a>
+                </figure>
+
+                <figure id="fig4">
+                    <a href="https://www.booking.com/hotel/es/o-retiro-do-conde.es.html">
+                        <picture>
+                            <source srcset="../images/Alojamientos/RetiroConde.jpg" media="(min-width:900px)">
+                            <img src="../images/imagenesGrandes/Alojamientos/RetiroConde.jpg" alt="O Retiro do Conde">
+                        </picture>
+                        <figcaption>O retiro do Conde</figcaption>
+                    </a>
+                </figure>
+
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Script que aplica un efecto visual a las imágenes -->
+    <script src="scripts/efectoImagen.js"> </script>
+
+</body>
+
+</html>
